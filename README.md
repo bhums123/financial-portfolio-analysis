@@ -5,15 +5,11 @@ End-to-end financial analytics project analyzing a 10-stock portfolio
 from 2020-2024 using Python, SQL, Power BI, and Tableau Cloud.
 
 ## Live Dashboard
-- Tableau Dashboard: [View Here](YOUR_TABLEAU_LINK)
+- Tableau Dashboard: [View Here](YOUR_TABLEAU_LINK_HERE)
 
 ## Tech Stack
 - Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy)
-- SQL (SQLite)
-- Power BI Desktop
-- Tableau Cloud
-- Excel (openpyxl)
-- yfinance API
+- SQL (SQLite) | Power BI | Tableau Cloud | Excel | yfinance API
 
 ## Stocks Analyzed
 | Stock | Ticker | Sector |
@@ -30,27 +26,27 @@ from 2020-2024 using Python, SQL, Power BI, and Tableau Cloud.
 | Infosys | INFY | IT Services |
 
 ## Key Findings
-- Best performer: TSLA with highest annualized return (~45%)
-- Best risk-adjusted return: MSFT with Sharpe Ratio of 1.15
-- Most stable stock: JNJ with lowest volatility (~16%)
-- COVID crash detected via Z-score anomaly detection (March 2020)
-- Tech stocks (AAPL, MSFT, AMZN) showed highest correlation
+- Best performer: TSLA (~45% annualized return)
+- Best risk-adjusted: MSFT (Sharpe Ratio 1.15)
+- Most stable: JNJ (lowest volatility ~16%)
+- COVID crash detected via Z-score analysis (March 2020)
+- Tech stocks showed highest correlation with each other
 
-## Statistical Metrics Calculated
+## Statistical Metrics
 - Annualized Return and Volatility
 - Sharpe Ratio (risk-adjusted return)
 - Beta (market sensitivity vs S&P 500)
-- Value at Risk at 95% confidence
+- Value at Risk (95% confidence)
 - Z-score anomaly detection
 - Pearson correlation matrix
 
 ## Project Structure
 financial-dashboard/
-├── scripts/            # Python scripts
-├── data/processed/     # Cleaned datasets
-├── reports/            # Excel reports and charts
-├── dashboards/         # Power BI .pbix file
-└── requirements.txt    # Dependencies
+├── scripts/         # Python scripts
+├── data/processed/  # Cleaned datasets
+├── reports/         # Excel reports and charts
+├── dashboards/      # Power BI .pbix file
+└── requirements.txt # Dependencies
 
 ## How to Run
 1. Clone the repo
