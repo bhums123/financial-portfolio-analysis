@@ -1,93 +1,59 @@
-# Financial Dashboard
+# Financial Portfolio Analysis Dashboard
 
-A Python-based financial dashboard for tracking and analyzing stock market data.
+## Project Overview
+End-to-end financial analytics project analyzing a 10-stock portfolio 
+from 2020-2024 using Python, SQL, Power BI, and Tableau Cloud.
 
-## Features
+## Live Dashboard
+- Tableau Dashboard: [View Here](YOUR_TABLEAU_LINK)
 
-- **Real-time Stock Data**: Fetch historical stock prices using yfinance
-- **Technical Analysis**: Calculate moving averages, RSI, volatility, and returns
-- **Visualization**: Create interactive charts with matplotlib and seaborn
-- **Multi-stock Support**: Track multiple stocks simultaneously
-- **Data Storage**: SQLite database integration for storing historical data
+## Tech Stack
+- Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy)
+- SQL (SQLite)
+- Power BI Desktop
+- Tableau Cloud
+- Excel (openpyxl)
+- yfinance API
 
-## Installation
+## Stocks Analyzed
+| Stock | Ticker | Sector |
+|-------|--------|--------|
+| Apple | AAPL | Technology |
+| Microsoft | MSFT | Technology |
+| JPMorgan | JPM | Finance |
+| Goldman Sachs | GS | Finance |
+| Johnson & Johnson | JNJ | Healthcare |
+| Pfizer | PFE | Healthcare |
+| Tesla | TSLA | EV/Auto |
+| ExxonMobil | XOM | Energy |
+| Amazon | AMZN | E-Commerce |
+| Infosys | INFY | IT Services |
 
-1. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+## Key Findings
+- Best performer: TSLA with highest annualized return (~45%)
+- Best risk-adjusted return: MSFT with Sharpe Ratio of 1.15
+- Most stable stock: JNJ with lowest volatility (~16%)
+- COVID crash detected via Z-score anomaly detection (March 2020)
+- Tech stocks (AAPL, MSFT, AMZN) showed highest correlation
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-### Basic Example
-
-```python
-from app import fetch_stock_data, calculate_metrics, plot_stock_chart
-
-# Fetch data
-data = fetch_stock_data("AAPL")
-
-# Calculate metrics
-data = calculate_metrics(data)
-
-# Plot chart
-plot_stock_chart(data, "AAPL")
-```
-
-### Using Data Utilities
-
-```python
-from data_utils import get_stock_summary
-
-# Get summary for a stock
-summary = get_stock_summary("GOOGL", days=365)
-print(summary)
-```
+## Statistical Metrics Calculated
+- Annualized Return and Volatility
+- Sharpe Ratio (risk-adjusted return)
+- Beta (market sensitivity vs S&P 500)
+- Value at Risk at 95% confidence
+- Z-score anomaly detection
+- Pearson correlation matrix
 
 ## Project Structure
-
-```
 financial-dashboard/
-├── app.py              # Main application
-├── config.py           # Configuration settings
-├── data_utils.py       # Data utility functions
-├── requirements.txt    # Python dependencies
-└── README.md          # This file
-```
+├── scripts/            # Python scripts
+├── data/processed/     # Cleaned datasets
+├── reports/            # Excel reports and charts
+├── dashboards/         # Power BI .pbix file
+└── requirements.txt    # Dependencies
 
-## Dependencies
-
-- yfinance: Download stock market data
-- pandas: Data manipulation and analysis
-- numpy: Numerical computations
-- matplotlib: Data visualization
-- seaborn: Statistical data visualization
-- scipy: Scientific computing
-- sqlalchemy: Database ORM
-- jupyter: Interactive notebooks
-
-## Technical Indicators
-
-- **Moving Averages**: 20-day, 50-day, 200-day
-- **RSI**: 14-day Relative Strength Index
-- **Volatility**: 20-day rolling standard deviation
-- **Returns**: Daily and cumulative returns
-
-## Future Enhancements
-
-- Web interface with Flask/Streamlit
-- Real-time data streaming
-- Portfolio management
-- Advanced charting with plotly
-- Email alerts for price changes
-- Machine learning predictions
-
-## License
-
-MIT License
+## How to Run
+1. Clone the repo
+2. pip install -r requirements.txt
+3. Run scripts/powerbi_export.py
+4. Open Power BI dashboard
