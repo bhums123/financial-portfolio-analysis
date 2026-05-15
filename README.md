@@ -5,7 +5,7 @@ End-to-end financial analytics project analyzing a 10-stock portfolio
 from 2020-2024 using Python, SQL, Power BI, and Tableau Cloud.
 
 ## Live Dashboard
-- Tableau Dashboard: [View Here]([YOUR_TABLEAU_LINK_HERE](https://prod-in-a.online.tableau.com/#/site/bhumivarshney7017-098db6f5b4/home))
+- Tableau Dashboard: [View Here](https://prod-in-a.online.tableau.com/#/site/bhumivarshney7017-098db6f5b4/home)
 
 ## Tech Stack
 - Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy)
